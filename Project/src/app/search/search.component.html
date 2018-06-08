@@ -1,0 +1,54 @@
+<div class="row">
+    <div class="col-sm-4">
+      <div class="col-sm-11">
+            <div class="card ">
+              <div *ngFor="let search of previousSearch">
+                <p>{{search.createdAt | date}} |<b>{{ search.word_in_english}}</b> | {{search.translation}} </p>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 mr-auto">
+        <div class="card ">
+            <div class="row">
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" [(ngModel)]="word">
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <select class="form-control" [(ngModel)]="language">
+                            <option value="hi">English-Hindi</option>
+                            <option value="es">English-Spanish</option>
+                            <option value="fr">English-French</option>
+                            <option value="ja">English-Japanese</option>
+                            <option value="pl">English-Polish</option>
+                            <option value="ar">English-Arabic</option>
+                            <option value="de">English-German</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <i class="fa fa-search" (click)="getData()"></i>
+                </div>
+            </div>
+            <div class="loading" *ngIf="loading">
+                <i class="fa fa-circle-o-notch fa-spin"></i>
+            </div>
+                <div *ngIf="dataNotFound" class="alert alert-warning alert-dismissible fade show" role="alert">
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <strong>No data found! Please try again.</strong>
+            </div>
+            <div  *ngIf="displayMeaning">
+                <h1>{{searchWord}}</h1>
+                {{apidata.lang}}
+                <hr>
+                <!-- <div *ngFor="let m of meanings"> -->
+                    {{apidata.text}}
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+</div>

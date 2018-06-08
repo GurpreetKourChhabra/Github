@@ -1,0 +1,59 @@
+<div class="loginForm">
+    <div class="col-sm-6 col-lg-4 ml-auto mr-auto card">
+    <div class="row">
+        <div class="col-sm-12 ml-auto mr-auto">
+            <div class="login">
+                <form #form="ngForm" (ngSubmit)="login(form)">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" placeholder="Enter email"
+                name="emailVal"
+                id="emailVal"
+                [(ngModel)]="email"
+                required
+                email
+                #emailVal="ngModel">
+                <span class="help-text" *ngIf="(emailVal.touched && !emailVal.valid) || (!emailVal.valid  && showEmailErrorMsg)">Please provide a valid email!</span>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" placeholder="Password"
+                name="passwordVal" id="passwordVal" [(ngModel)]="password" autocomplete="off"
+                required
+                #passwordVal="ngModel">
+                <span class="help-text" *ngIf="(passwordVal.touched && !passwordVal.valid) || (!passwordVal.valid  && showPassErrorMsg)">Please provide password!</span>
+              </div>
+              <div class="form-group">
+               <button type="submit" class="btn btn-primary">Submit</button>
+               <button (click)="openSignUpForm(modal)" type="button" class="btn btn-primary pull-right facebook-btn"> Sign Up </button>
+             </div>
+          </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+<ng-template #modal let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title">SignUp</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form #signUpform="ngForm" (ngSubmit)="signUp(signUpform , modal)">
+    <div class="form-group">
+        <input type="email" class="form-control" placeholder="Enter email"
+        name="signUpEmail" [(ngModel)]="signUpEmail">
+    </div>
+    <div class="form-group">
+        <input type="password" class="form-control" placeholder="Password" name="pass"
+         [(ngModel)]="pass">
+   </div>
+     <button type="submit"class="btn btn-primary" (click)="test()">Submit</button>
+   </form>
+  </div>
+</ng-template>
