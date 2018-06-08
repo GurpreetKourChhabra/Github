@@ -1,0 +1,4 @@
+<app-todos [todos]="todos | async"
+           (toggle)="toggle($event)"></app-todos>
+
+<add-todo (add)="addTodo($event)" [reset]="addTodoSuccess$ | async"></add-todo>
