@@ -1,0 +1,16 @@
+ul {
+    border-radius: 5px solid;
+    /* height: 50px; */
+    overflow-y: auto;
+    padding: 0px;
+}
+li {
+    background: #ece9e9;
+    list-style: none;
+    padding: 9px;
+    text-align: center;
+    border: 1px solid #e6e1e1;
+}
+a {
+    cursor: pointer;
+}

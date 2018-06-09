@@ -1,0 +1,6 @@
+<h2 class="text-center">
+  Ngrx
+</h2>
+
+<app-person-detail (saveDetail) ="saveStudentDetail($event)"></app-person-detail>
+<app-display-detail [studentData]="studentDetail" (updateStudent)="editStudent($event)" (removeStudent)="removeStudent($event)"></app-display-detail>

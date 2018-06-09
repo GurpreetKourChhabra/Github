@@ -1,0 +1,11 @@
+<div class="input-group">
+  <input  class="form-control" placeholder="yyyy-mm-dd"
+        name="end" [displayMonths]="displayMonths" [navigation]="navigation" ngbDatepicker
+        [(ngModel)]="endDate" (ngModelChange)="setEndDate()" #endDateDatepicker="ngbDatepicker"
+         autocomplete="off">
+  <div class="input-group-append">
+    <button (clickOutside)="onClickedOutside($event , endDateDatepicker)" [disabled]="!ifStartDateisSet" (click)="endDateDatepicker.toggle()" class="btn btn-outline-secondary" type="button">
+      <img src="assets/img/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;"/>
+    </button>
+  </div>
+</div>

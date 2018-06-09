@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="form-group">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" [(ngModel)]="studentName">
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label for="name">Roll No</label>
+                    <input type="text" class="form-control" [(ngModel)]="rollNo">
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary" (click)="onSubmit()">Submit</button>
+    </div>
+</div>

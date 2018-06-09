@@ -1,0 +1,6 @@
+<div *ngIf="studentData.isEdit" style="display:inline;">
+    <input  type="text" value="" placeholder="name" [(ngModel)]="studentData.name">
+    <input  type="text" value="" placeholder="roll no" [(ngModel)]="studentData.rollNo">
+    {{studentData.isEdit}}
+    <button (click)="save()" class=" btn btn-primary">Save</button>
+</div>

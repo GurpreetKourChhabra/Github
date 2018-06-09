@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+        <div *ngFor="let student of studentData | async" class="card">
+            <div class="form-group">
+                <app-edit-student *ngIf="student.isEdit" [studentData]="student" (editStudentDetail)="editStudent($event)">
+                </app-edit-student>
+                <span *ngIf="!student.isEdit">{{student.name}} {{student.rollNo}} </span>
+                <button *ngIf="!student.isEdit" (click)="update(student)" class="btn btn-primary">Update</button>
+                <button (click)="deleteStudent(student)" class=" btn btn-danger">Delete</button>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>

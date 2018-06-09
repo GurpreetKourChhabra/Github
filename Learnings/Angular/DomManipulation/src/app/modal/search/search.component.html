@@ -1,0 +1,16 @@
+<div class="input-group" (click)="searchCity">
+  <input class="form-control" type="text"
+  name="city"
+   placeholder="City"
+   (click)="searchCity()"
+   autocomplete="off"
+   [(ngModel)]="searchValue"
+   >
+</div>
+<div class="searchbox" (clickOutside)="onClickedOutside($event)" *ngIf="searchState" >
+    <ul class="cities">
+        <li class="cities" *ngFor="let s of states |filter:searchValue">
+            <a (click)="getCity(s)">{{s}}</a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,16 @@
+<!-- <app-home></app-home> -->
+
+<!-- <div class="left" style="margin-left:10%">
+<angular-d3-bar class="test" [id]="test2" [data]="barChartData" [dataColumns]="dataColumns" [colors]="colors" [yAxisTicks]=10 [width]=1000
+[height]=300 [transitionDuration]=1000 [transitionDelay]=3  [barWidth]="'56px'"></angular-d3-bar>
+</div> -->
+
+<div class="left" *ngIf="setChartData" style="margin-left:5%">
+    <angular-d3-bar [id]="test2" [data]="barChartData" [dataColumns]="dataColumns" [colors]="colors" [yAxisTicks]=10 [width]=1500
+    [height]=200 [transitionDuration]=1000 [transitionDelay]=30 [barWidth]="'45px'"></angular-d3-bar>
+
+
+<angular-d3-pie [id]="pieChartId" [data]="pieChartData"></angular-d3-pie>
+</div>
+
+<a (click)="insertUser()">Test</a>

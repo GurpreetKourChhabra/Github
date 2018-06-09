@@ -1,0 +1,9 @@
+.progress {
+  position: absolute;
+  width: 1%;
+  height: 1%;
+  background: red;
+  animation-name: running;
+  animation-duration: 4s;
+  animation-iteration-count: 5;
+}

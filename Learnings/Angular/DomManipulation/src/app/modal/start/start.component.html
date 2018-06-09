@@ -1,0 +1,8 @@
+<div class="input-group"  (clickOutside)="onClickedOutside($event , startDateDatepicker)">
+    <input class="form-control" [displayMonths]="displayMonths" placeholder="yyyy-mm-dd" name="start" [(ngModel)]="startDate" ngbDatepicker (ngModelChange)="setStartDate()" #startDateDatepicker="ngbDatepicker">
+  <div class="input-group-append">
+    <button  class="btn btn-outline-secondary" (click)="startDateDatepicker.toggle()" type="button">
+      <img src="assets/img/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;"/>
+  </button>
+  </div>
+</div>

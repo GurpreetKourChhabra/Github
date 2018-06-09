@@ -1,0 +1,136 @@
+ON contactRelationUpdate
+     { action: 'add',
+       type: 'contactRelationUpdate',
+       timestamp: '2018-02-07T05:41:31.587Z',
+       entities: [ { locale: 'en', platform: 'Windows', type: 'clientInfo' } ],
+       text: '',
+       attachments: [],
+       address:
+        { id: 'f:1d70b6a3',
+          channelId: 'skype',
+          user:
+           { id: '29:1JWYoGV-II1v2-5mL3gZYICgJ1K1ag9fbh3FAFMCdo3I8iE7eZhHWlu10FF1ONd5y',
+             name: 'Rashmi Soni' },
+          conversation:
+           { id: '29:1JWYoGV-II1v2-5mL3gZYICgJ1K1ag9fbh3FAFMCdo3I8iE7eZhHWlu10FF1ONd5y' },
+          bot:
+           { id: '28:da419137-91b4-4d3e-b028-9b9df7dab8bc',
+             name: 'Newput-bot-2018' },
+          serviceUrl: 'https://smba.trafficmanager.net/apis/' },
+       source: 'skype',
+       agent: 'botbuilder',
+       user:
+        { id: '29:1JWYoGV-II1v2-5mL3gZYICgJ1K1ag9fbh3FAFMCdo3I8iE7eZhHWlu10FF1ONd5y',
+          name: 'Rashmi Soni' } }
+
+          { action: 'add',
+  type: 'contactRelationUpdate',
+  timestamp: '2018-02-07T05:42:44.896Z',
+  entities: [ { locale: 'en', platform: 'Windows', type: 'clientInfo' } ],
+  text: '',
+  attachments: [],
+  address:
+   { id: 'f:192108ac',
+     channelId: 'skype',
+     user: 
+      { id: '29:1-HsRNAEaWAQrAa99BMlnTpTaGvjksjNxodMajX7Pzeska9ULK1ifxhnE55T2QbuN',
+        name: 'Gurpreet Chhabra' },
+     conversation:
+      { id: '29:1-HsRNAEaWAQrAa99BMlnTpTaGvjksjNxodMajX7Pzeska9ULK1ifxhnE55T2QbuN' },
+     bot:
+      { id: '28:da419137-91b4-4d3e-b028-9b9df7dab8bc',
+        name: 'Newput-bot-2018' },
+     serviceUrl: 'https://smba.trafficmanager.net/apis/' },
+  source: 'skype',
+  agent: 'botbuilder',
+  user:
+   { id: '29:1-HsRNAEaWAQrAa99BMlnTpTaGvjksjNxodMajX7Pzeska9ULK1ifxhnE55T2QbuN',
+     name: 'Gurpreet Chhabra' } }
+
+
+
+
+
+
+
+//Member leaves the conversation
+{ membersRemoved:
+   [ { id: '29:1-HsRNAEaWAQrAa99BMlnTpTaGvjksjNxodMajX7Pzeska9ULK1ifxhnE55T2QbuN' } ],
+  type: 'conversationUpdate',
+  timestamp: '2018-02-07T05:56:43.143Z',
+  text: '',
+  attachments: [],
+  entities: [],
+  address:
+   { id: 'f:93a1316d',
+     channelId: 'skype',
+     user:
+      { id: '29:1-HsRNAEaWAQrAa99BMlnTpTaGvjksjNxodMajX7Pzeska9ULK1ifxhnE55T2QbuN' },
+     conversation:
+      { isGroup: true,
+        id: '19:c6df510657a149f49a60f76b044e2f38@thread.skype' },
+     bot:
+      { id: '28:da419137-91b4-4d3e-b028-9b9df7dab8bc',
+        name: 'Newput-bot-2018' },
+     serviceUrl: 'https://smba.trafficmanager.net/apis/' },
+  source: 'skype',
+  agent: 'botbuilder',
+  user:
+   { id: '29:1-HsRNAEaWAQrAa99BMlnTpTaGvjksjNxodMajX7Pzeska9ULK1ifxhnE55T2QbuN' } }
+
+
+   //member added to conversationUpdate
+{ membersAdded:
+   [ { id: '29:1-HsRNAEaWAQrAa99BMlnTpTaGvjksjNxodMajX7Pzeska9ULK1ifxhnE55T2QbuN' } ],
+  type: 'conversationUpdate',
+  timestamp: '2018-02-07T05:58:41.837Z',
+  text: '',
+  attachments: [],
+  entities: [],
+  address:
+   { id: 'f:38f995e2',
+     channelId: 'skype',
+     user:
+      { id: '29:1JWYoGV-II1v2-5mL3gZYICgJ1K1ag9fbh3FAFMCdo3I8iE7eZhHWlu10FF1ONd5y' },
+     conversation:
+      { isGroup: true,
+        id: '19:c6df510657a149f49a60f76b044e2f38@thread.skype' },
+     bot:
+      { id: '28:da419137-91b4-4d3e-b028-9b9df7dab8bc',
+        name: 'Newput-bot-2018' },
+     serviceUrl: 'https://smba.trafficmanager.net/apis/' },
+  source: 'skype',
+  agent: 'botbuilder',
+  user:
+   { id: '29:1JWYoGV-II1v2-5mL3gZYICgJ1K1ag9fbh3FAFMCdo3I8iE7eZhHWlu10FF1ONd5y' } }
+
+
+
+
+
+
+
+   { membersRemoved:
+      [ { id: '29:1-HsRNAEaWAQrAa99BMlnTpTaGvjksjNxodMajX7Pzeska9ULK1ifxhnE55T2QbuN' } ],
+     type: 'conversationUpdate',
+     timestamp: '2018-02-07T05:56:43.143Z',
+     text: '',
+     attachments: [],
+     entities: [],
+     address:
+      { id: 'f:93a1316d',
+        channelId: 'skype',
+        user:
+         { id: '29:1-HsRNAEaWAQrAa99BMlnTpTaGvjksjNxodMajX7Pzeska9ULK1ifxhnE55T2QbuN' },
+        conversation:
+         { isGroup: true,
+           id: '19:c6df510657a149f49a60f76b044e2f38@thread.skype' },
+        bot:
+         { id: '28:da419137-91b4-4d3e-b028-9b9df7dab8bc',
+           name: 'Newput-bot-2018' },
+        serviceUrl: 'https://smba.trafficmanager.net/apis/' },
+     source: 'skype',
+     agent: 'botbuilder',
+     user:
+      { id: '29:1-HsRNAEaWAQrAa99BMlnTpTaGvjksjNxodMajX7Pzeska9ULK1ifxhnE55T2QbuN' } }
+   undefined
